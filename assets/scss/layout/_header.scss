@@ -1,4 +1,52 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar{
+  padding: 16px 0;
+  @include pad{
+    padding-bottom: 0px;
+  }
+}
+.navbar-wrap{
+  display: flex;
+  justify-content: space-between;
+  @include pad{
+    flex-direction: column;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0; 
+  }
+}
+.navbar-logo{
+  width: 80px;
+  @include pad{
+    margin: 0 0 16px 16px;
+  }
+}
+.navbar-menu{
+  display: flex;
+  align-items: center;
+  @include pad{
+    flex-wrap: wrap;
+  }
+}
+.navbar-item{
+  @include pad{
+    border: 1px solid #ffffff;
+  }
+}
+.navbar-link{
+  display: block;
+  padding: 0 32px;
+  color:#ffffff;    
+  font-size: 20px;
+  @include pad{
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
+.navbar-link:hover {
+  opacity: 0.7;
+}
+
+.navbar-item:last-child .navbar-link {
+  padding-right: 0;
 }
