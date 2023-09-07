@@ -55,9 +55,30 @@ body {
 .col-12 {
     width: 100%;
 }
+.px-3{
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.mb-2{
+    margin-bottom: 8px;
+}
 @include pad{
+    .col-md-5{
+        width: 46.666%;
+    }
     .col-md-6{
         width: 50%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+}
+@include mobile{
+    .col-sm-3{
+        width: 75%;
+    }
+    .col-sm-4{
+        width: 100%;
     }
 }
 .row {
@@ -65,3 +86,24 @@ body {
     margin-right: -12px;
     display: flex;
 }
+.mr-4{
+    margin-right: 16px;
+}
+.main{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    @include mobile{
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+  }
+  .title{
+      border-left: 8px solid #9F1213;
+      padding-left: 16px;
+      margin-bottom: 33px;
+      font-weight: 900;
+      font-size: 48px;
+      @include mobile{
+          font-size: 24px;
+      }
+  }

@@ -4,11 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+    <title>location</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是contact</h1>
+    <div class="container">
+      <div class="main">
+        <h1 class="title">門市據點</h1>
+        <div class="branch-select-area">
+          <h2 class="mr-4">選擇分店</h2>
+          <select class="branch-select col-3 col-md-5 col-sm-3" name="" id="">
+            <option value="">台北中山旗艦店</option>
+          </select>
+        </div>
+        <div class="store-wrap row">
+          <div class="store-content col-5 px-3 col-md-12">
+            <img class="col-md-6 col-sm-4" src="../assets/images/storepage-1.png" alt="store-image">
+            <div class="store-info col-md-6 col-sm-4">
+              <h3>台北中山旗艦店</h3>
+              <ul>
+                <li class="mb-2">                  
+                  <p><span class="material-icons-outlined">call</span>電話：(02)000-1234</p>
+                </li>
+                <li class="mb-2">
+                  <p><span class="material-icons-outlined">schedule</span>營業時間：10:00-21:00</p>
+                </li>
+                <li>
+                  <p><span class="material-icons-outlined">location_on</span>地址：台北市中山區南京東路25巷2-1號</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img src="../assets/images/store_img.png" alt="map" class="store-map col-7 px-3 col-md-12">
+        </div>
+      </div>
+    </div>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
