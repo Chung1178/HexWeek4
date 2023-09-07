@@ -1,0 +1,15 @@
+.faq{
+    font-size: 24px;
+    font-weight: 900;
+}
+.faq-list{
+    h3{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    @include mobile{
+        li{
+            margin-bottom: 24px;
+        }
+    }
+}
